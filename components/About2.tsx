@@ -9,35 +9,42 @@ const About2 = () => {
       <div className="container px-2 md:px-4 py-10 md:py-20 mx-auto flex flex-col md:flex-row gap-6 md:gap-20 items-center">
         <div className=" md:w-2/3 space-y-3 md:space-y-8">
           <h2 className="text-4xl font-bold md:text-6xl text-primary flex flex-col  text-center">
-            Šlep služba Čačak - Purić{" "}
+            Kreditni savetnik
             <span className="text-2xl font-normal md:text-3xl  text-muted-foreground">
-              Do 10 tona nosivosti
+              Vas partner za pametne odluke
             </span>
           </h2>
           <p className=" first-letter:pl-6 text-lg md:text-3xl">
-            Tražite{" "}
-            <span className="font-bold">pouzdanu šlep službu u Čačku</span> i
-            okolini? Naša profesionalna ekipa je dostupna 24/7 i spremna da vam
-            pomogne u bilo kojoj situaciji – bilo da je u pitanju{" "}
-            <span className="font-bold">
-              kvar, saobraćajna nezgoda, probušena guma
-            </span>{" "}
-            ili bilo koji drugi problem na putu.
+            Kreditni Savetnik je specijalizovana firma koja pruža profesionalne
+            usluge savetovanja u oblasti finansija i kreditiranja. Naš cilj je
+            da klijentima pomognemo da pronađu najpovoljnije finansijske
+            proizvode, unaprede svoje finansijsko stanje i donesu informisane
+            odluke prilikom uzimanja kredita.
           </p>
           <p className=" first-letter:pl-6 text-lg md:text-3xl">
-            Naša šlep služba pruža siguran i brz transport vozila na teritoriji
-            <span className="font-bold">
-              Čačka, Gornjeg Milanovca, Kraljeva, Užica i cele Srbije
-            </span>
-            . Bez obzira na to da li vam je potreban{" "}
-            <span className="font-bold">
-              prevoz automobila, kombija, motocikla ili lakših teretnih vozila
-            </span>
-            , posedujemo specijalizovana vozila i opremu za bezbedan transport.
+            Uz tim iskusnih stručnjaka, nudimo personalizovane analize i
+            preporuke prilagođene vašim potrebama, bilo da planirate stambeni
+            kredit, refinansiranje postojećih obaveza ili tražite najbolju
+            opciju za keš kredit. Razumemo da su finansijske odluke kompleksne,
+            pa preuzimamo odgovornost da vas vodimo kroz ceo proces – od početne
+            procene vaše kreditne sposobnosti do zaključenja ugovora.
           </p>
           <p className="first-letter:pl-6 text-lg md:text-3xl">
-            Kontaktirajte nas 24/7 i obezbedite siguran prevoz vašeg vozila.
+            Naš pristup temelji se na transparentnosti, pouzdanosti i
+            profesionalizmu. Radimo u saradnji s vodećim bankama i finansijskim
+            institucijama, što nam omogućava da vam ponudimo najbolje uslove na
+            tržištu.
           </p>
+          <p className="first-letter:pl-6 text-lg md:text-3xl">
+            Bilo da ste pojedinac ili preduzeće, Kreditni Savetnik je tu da vam
+            pomogne da postignete finansijsku sigurnost i ostvarite svoje
+            ciljeve uz minimalne rizike i troškove. Verujemo da svaka
+            finansijska odluka treba da bude mudro donesena – sa nama, vaša
+            budućnost je u sigurnim rukama.
+          </p>
+          <p>Pisanje prigovora bankama i kreditnom birou</p>
+          <p>Tumačenje izveštaja Kreditnog biroa</p>
+          <p>Posredovanje u procesu dobijanja kredita</p>
         </div>
         <motion.div
           initial={{ scale: 0.2, opacity: 0 }} // Naizmenično levo/desno
@@ -47,10 +54,10 @@ const About2 = () => {
           className="rounded-3xl overflow-hidden  md:w-1/3"
         >
           <Image
-            src={"/puric.jpg"}
+            src={"/savetnik.jpg"}
             width={500}
             height={800}
-            alt="slep puric cacak "
+            alt="kreditni savetnik"
             className="object-cover h-[300px] md:h-full"
           />
         </motion.div>

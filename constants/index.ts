@@ -14,27 +14,6 @@ export const navList = [
     link: "/",
   },
   {
-    title: "Usluge",
-    list: [
-      {
-        title: "Kuhinje",
-        link: "",
-      },
-      {
-        title: "Plakari",
-        link: "",
-      },
-      {
-        title: "TV Komode",
-        link: "",
-      },
-      {
-        title: "Projektovanje Enterijera",
-        link: "",
-      },
-    ],
-  },
-  {
     title: "Proizvodi",
     link: "/proizvodi",
   },
@@ -272,3 +251,13 @@ export interface Cards2DataText {
 export const cards2DataText: Cards2DataText = {
   text: "Pružamo usluge izrade, montaže i održavanja elektro ormana za domaćinstva, poslovne prostore i industrijska postrojenja. Naš tim vodi računa o kvalitetu instalacija i bezbednosti sistema, uz poštovanje svih standarda i propisa.",
 };
+
+export const pictures: string[] = [
+  "/Kreditni savetnik logo.jpg",
+  "/Kreditni savetnik logo 1.jpg",
+  "/Kreditni savetnik logo 2.jpg",
+  "/Kreditni savetnik logo 3.jpg",
+  "/A frame reklama.jpg",
+  "/Roll up.jpg",
+  "/ulazna vrata.jpg",
+];

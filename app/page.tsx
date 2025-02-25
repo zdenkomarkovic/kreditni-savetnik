@@ -1,27 +1,30 @@
-import About from "@/components/About";
 import About2 from "@/components/About2";
 import BackgroundImage from "@/components/BackgroundImage";
 import Cardlist from "@/components/Cardlist";
 import Cards1 from "@/components/Cards1";
 import Cards2 from "@/components/Cards2";
 import Cards2Kosina from "@/components/Cards2Kosina";
-import CardsKosina from "@/components/CardsKosina";
 import CardWithImage from "@/components/CardWithImage";
-import Hero from "@/components/Hero";
+import Hero2 from "@/components/Hero2";
+import ImageEditor from "@/components/ImageEditor";
 import PozoviteNasOdmah from "@/components/PozoviteNasOdmah";
 import PozoviteNasOdmahImage from "@/components/PozoviteNasOdmahImage";
 import Testemonials from "@/components/Testimonials";
-import { cards1Data, cards2Data, cards2DataText } from "@/constants/index";
+import {
+  cards1Data,
+  cards2Data,
+  cards2DataText,
+  pictures,
+} from "@/constants/index";
 
 export default function Home() {
   return (
     <div className="">
-      <Hero />
-      <About />
-      <CardsKosina />
+      <Hero2 />
       <About2 />
       <PozoviteNasOdmah />
       <CardWithImage />
+      <BackgroundImage />
       <PozoviteNasOdmahImage />
       <Cards1 title={"dodaj naslov"} data={cards1Data} />
       <Cards2
@@ -35,7 +38,7 @@ export default function Home() {
         text={cards2DataText}
       />
       <Cardlist />
-      <BackgroundImage />
+      <ImageEditor images={pictures} />
       <Testemonials />
     </div>
   );
