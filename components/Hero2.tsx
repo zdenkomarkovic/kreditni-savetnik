@@ -2,8 +2,6 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import Hero1 from "../public/ulazna vrata.jpg";
-import Image from "@/node_modules/next/image";
 
 function FloatingPaths({ position }: { position: number }) {
   const paths = Array.from({ length: 36 }, (_, i) => ({
