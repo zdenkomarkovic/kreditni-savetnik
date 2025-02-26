@@ -36,7 +36,6 @@ const OneCard = ({ item }: { item: Cards2Data }) => {
 
       <CardHeader className="relative z-10">
         <div className=" text-2xl md:text-3xl text-primary flex gap-3 items-center justify-start">
-          <IoCheckmarkDoneOutline className="w-[50px]" />
           <p className="">{item.title}</p>
         </div>
       </CardHeader>

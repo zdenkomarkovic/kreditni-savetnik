@@ -7,10 +7,6 @@ export const navList = [
     link: "/",
   },
   {
-    title: "Proizvodi",
-    link: "/proizvodi",
-  },
-  {
     title: "Kontakt",
     link: "/kontakt",
   },
@@ -124,49 +120,49 @@ export const cards2Data: Cards2Data[] = [
   {
     id: 1,
     icon: GiWeight,
-    title: "Posredovanje pri odobravanju kredita.",
+    title: " - Posredovanje pri odobravanju kredita.",
     text: "",
   },
   {
     id: 2,
     icon: GiWeight,
-    title: "Tumačenje izveštaja Kreditnog biroa.",
+    title: " - Tumačenje izveštaja Kreditnog biroa.",
     text: "",
   },
   {
     id: 3,
     icon: GiWeight,
-    title: "Pisanje prigovora bankama i kreditnom birou",
+    title: " - Pisanje prigovora bankama i kreditnom birou",
     text: "bankama i kreditnom birou",
   },
   {
     id: 4,
     icon: GiWeight,
-    title: "Pomoc u pripremi kreditne dokumentacije",
+    title: " - Pomoc u pripremi kreditne dokumentacije",
     text: "analiza ponuda, poređenje uslova, procena kreditne sposobnosti",
   },
   {
     id: 5,
     icon: GiWeight,
-    title: "Refinansiranje",
+    title: " - Refinansiranje",
     text: "smanjenje mesečne rate, konsolidacija dugova",
   },
   {
     id: 6,
     icon: GiWeight,
-    title: "Analiza prihoda, rashoca i kreditne sposobnosti",
+    title: " - Analiza prihoda, rashoca i kreditne sposobnosti",
     text: "pomoć pri izboru najpovoljnijeg stambenog kredita",
   },
   {
     id: 7,
     icon: GiWeight,
-    title: "Pronalazenje kredita sa najboljim uslovima",
+    title: " - Pronalazenje kredita sa najboljim uslovima",
     text: "saveti za brže i lakše dobijanje gotovinskog kredita",
   },
   {
     id: 8,
     icon: GiWeight,
-    title: "Pregovaranje sa bankama za bolje uslove",
+    title: " - Pregovaranje sa bankama za bolje uslove",
     text: "saveti za brže i lakše dobijanje gotovinskog kredita",
   },
 ];

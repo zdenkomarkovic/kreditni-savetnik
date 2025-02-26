@@ -13,7 +13,7 @@ export default function Home() {
     <div className="">
       <Hero2Image
         title={"Kreditni savetnik"}
-        img={"/usluge.jpg"}
+        img={"/katie-harp-5Tn-AwgJtgA-unsplash.jpg"}
         text={"Sve vezano za kredite na jednom mestu!"}
         text2={"Jer mi imamo odgovore svih banaka!"}
       />
@@ -21,8 +21,8 @@ export default function Home() {
       <About2 />
       <ServicesWithImage />
       <PozoviteNasOdmahImage />
-      <BackgroundImage />
       <Cards1 title={"Zašto izabrati Kreditni Savetnik?"} data={cards1Data} />
+      <BackgroundImage />
       <Testemonials />
     </div>
   );

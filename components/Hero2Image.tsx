@@ -76,7 +76,7 @@ export default function BackgroundPaths({
             transition={{ duration: 2 }}
             className="max-w-3xl mr-auto z-10"
           >
-            <h1 className="pt-80 font-gagalin text-5xl sm:text-7xl md:text-8xl font-bold mb-8">
+            <h1 className="pt-80 text-4xl sm:text-6xl md:text-7xl font-extrabold mb-8">
               {words.map((word, wordIndex) => (
                 <span
                   key={wordIndex}
@@ -102,12 +102,12 @@ export default function BackgroundPaths({
               ))}
             </h1>
             <div className=" text-left z-0">
-              <p className="pl-16 font-extrabold text-muted md:text-muted-foreground text-4xl md:text-5xl">
+              <p className="first-letter:pl-4 px-6 font-extraboldmd:text-muted-foreground text-3xl md:text-5xl">
                 {text}
               </p>
             </div>
             <div className=" text-left">
-              <p className="pl-16 font-extrabold text-muted-foreground text-4xl md:text-5xl">
+              <p className="first-letter:pl-4 p-6  text-muted-foreground text-3xl md:text-5xl">
                 {text2}
               </p>
             </div>

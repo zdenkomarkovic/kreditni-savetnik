@@ -10,7 +10,16 @@ const Cards1 = ({ title, data }: { title: string; data: Cards1Data[] }) => {
           {title}
         </h2>
         <div className="grid md:grid-cols-4 text-center gap-6 md:gap-8 items-stretch">
-          {data.map((item) => {
+          {data.slice(0, 4).map((item) => {
+            return (
+              <MotionComponent1 key={item.id}>
+                <OneCard key={item.id} item={item} />;
+              </MotionComponent1>
+            );
+          })}
+        </div>
+        <div className="grid md:grid-cols-2 text-center gap-6 md:gap-8 items-stretch">
+          {data.slice(4).map((item) => {
             return (
               <MotionComponent1 key={item.id}>
                 <OneCard key={item.id} item={item} />;
