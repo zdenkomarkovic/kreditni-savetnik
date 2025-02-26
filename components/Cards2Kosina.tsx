@@ -1,7 +1,6 @@
 import { Cards2Data } from "@/constants/index";
 import { CardHeader, Card } from "./ui/card";
 import MotionComponent1 from "./MotionComponent1";
-import { IoCheckmarkDoneOutline } from "react-icons/io5";
 
 const Cards2Kosina = ({ data }: { data: Cards2Data[] }) => {
   return (
