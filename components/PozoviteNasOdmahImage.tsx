@@ -3,7 +3,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { PhoneIcon } from "lucide-react";
 import Image from "@/node_modules/next/image";
-import { FaRegCircleCheck } from "react-icons/fa6";
 
 const PozoviteNasOdmahImage = () => {
   return (

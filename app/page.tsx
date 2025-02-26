@@ -1,11 +1,10 @@
 import About2 from "@/components/About2";
 import BackgroundImage from "@/components/BackgroundImage";
 import Cards1 from "@/components/Cards1";
-import Cards2 from "@/components/Cards2";
 import Hero2 from "@/components/Hero2";
 import PozoviteNasOdmahImage from "@/components/PozoviteNasOdmahImage";
 import Testemonials from "@/components/Testimonials";
-import { cards1Data, cards2Data, cards2DataText } from "@/constants/index";
+import { cards1Data } from "@/constants/index";
 import ServicesWithImage from "@/components/ServicesWithImage";
 import Hero2Image from "@/components/Hero2Image";
 

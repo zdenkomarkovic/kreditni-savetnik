@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-
 import Image from "@/node_modules/next/image";
 
 function FloatingPaths({ position }: { position: number }) {
