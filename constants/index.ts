@@ -23,93 +23,54 @@ export const navList = [
   },
 ];
 
-export interface WorkList {
-  id: number;
-  title: string;
-  text: string;
-}
-
-export const workList = [
-  {
-    id: 1,
-    title: "Grupni treninzi",
-    text: "Oblikuj svoje telo i poboljšaj kondiciju uz dinamične grupne treninge! Vežbaj u motivišućem okruženju, uz stručno vođstvo i podršku tima. Pridruži se i zajedno postižemo ciljeve!",
-    icon: IoIosPeople,
-  },
-  {
-    id: 2,
-    title: "Individualni treninzi",
-    text: "Ostvari maksimalne rezultate uz personalizovane individualne treninge! Treniraj prema svom tempu, uz stručnu podršku i plan prilagođen tvojim ciljevima. Fokus je na tebi!",
-    icon: IoIosPerson,
-  },
-  {
-    id: 3,
-    title: "Pilates",
-    text: "Poboljšaj fleksibilnost, snagu i držanje uz pilates treninge! Uz kontrolisane pokrete i fokus na disanje, oblikuj telo i oslobodi se stresa. Idealno za sve nivoe kondicije!",
-    icon: IoFitnessOutline,
-  },
-  {
-    id: 4,
-    title: "Body power",
-    text: "Ojačaj mišiće i poboljšaj izdržljivost uz intenzivan trening snage! Kombinacija tegova i funkcionalnih vežbi pomoći će ti da postigneš vrhunsku formu.",
-    icon: GiWeightLiftingUp,
-  },
-  {
-    id: 5,
-    title: "Mix-fit",
-    text: " Dinamičan spoj kardio i snage za maksimalne rezultate! Raznovrsni pokreti, visoka energija i zabavna atmosfera čine svaki trening izazovnim i efektivnim.",
-    icon: MdOutlineSportsGymnastics,
-  },
-  {
-    id: 6,
-    title: "Aeronix",
-    text: "Spoj aerobnih vežbi i funkcionalnog treninga za bolju kondiciju i oblikovanje tela! Povećaj izdržljivost, sagori kalorije i uživaj u energičnom ritmu vežbanja.",
-    icon: PiRocketLaunchBold,
-  },
-];
-
 export interface TestimonialData {
   id: number;
   title: string;
   image: string;
   description: string;
+  signiture: string;
 }
 
 export const testimonialData: TestimonialData[] = [
   {
     id: 1,
-    title: "Jelena R.",
+    title: "Brzo i lako do stambenog kredita",
     image: "/hero1.jpg",
     description:
-      "Treninzi su odlični, atmosfera motivišuća, a instruktori puni znanja i energije! Već nakon nekoliko nedelja osećam ogromnu promenu u kondiciji i snazi. Preporučujem svima!",
+      "Dugo sam tražio najbolju ponudu za stambeni kredit, ali su mi uslovi u bankama delovali komplikovano. Kreditni Savetnik mi je pomogao da pronađem najpovoljniju opciju i ubrzam ceo proces. Sada sam vlasnik stana bez stresa i skrivenih troškova!",
+    signiture: "Marko P",
   },
   {
     id: 2,
-    title: "Ivana S.",
+    title: "Refinansiranje koje mi je smanjilo rate",
     image: "/hero1.jpg",
     description:
-      "Fitnes klub je za mene više od mesta za vežbanje – ovde sam pronašla ekipu koja me inspiriše i podržava! Vežbamo zajedno, bodrimo se i družimo i van treninga. Ne bih ovo menjala ni za šta!",
+      "Zbog više kredita koje sam imao, mesečne rate su mi bile previsoke. Uz pomoć tima Kreditnog Savetnika uspeo sam da refinansiram dugovanja i smanjim mesečne troškove za 30%! Preporučujem svima koji žele bolju kontrolu nad svojim finansijama.",
+    signiture: "Jelena M",
   },
   {
     id: 3,
-    title: "Ana M.",
+    title: " Keš kredit bez komplikacija",
     image: "/hero2.jpg",
     description:
-      "Posle svakog treninga osećam se snažnije i zdravije! Programi su prilagođeni svim nivoima, a podrška trenera me stalno gura ka boljoj verziji sebe.",
+      "Trebao mi je keš kredit za hitne troškove, ali nisam bio siguran gde da ga uzmem. Stručnjaci iz Kreditnog Savetnika su mi objasnili sve opcije i pronašli najbolju ponudu. Zahvaljujući njima, novac sam dobio u roku od nekoliko dana!",
+    signiture: "Nemanja S",
   },
   {
     id: 4,
-    title: "Katarina N.",
+    title: "Profesionalna pomoć pri žalbi Kreditnom birou",
     image: "/hero3.jpg",
     description:
-      "Od kada treniram ovde, imam više energije, manje stresa i bolju kondiciju! Ambijent je fantastičan, a treninzi su uvek dinamični i zanimljivi.",
+      "Iznenadio sam se kada sam video negativne podatke u svom izveštaju Kreditnog biroa, iako sam uredno plaćao sve obaveze. Kreditni Savetnik mi je pomogao da napišem prigovor i rešim problem. Odlična usluga i maksimalna profesionalnost!",
+    signiture: "Ivana K",
   },
   {
     id: 5,
-    title: "Milica P.",
+    title: "Transparentno i bez skrivenih troškova",
     image: "/hero1.jpg",
     description:
-      "Treniram ovde već nekoliko godina i mogu reći da mi je ovo druga porodica! Pored sjajnih treninga, upoznala sam divne ljude koji su mi postali bliski prijatelji. Motivacija i podrška su neverovatni!",
+      "Najviše mi se dopala transparentnost u radu Kreditnog Savetnika. Sve su mi objasnili, nisu mi obećavali nemoguće stvari i stvarno su pronašli ponudu koja je najbolja za mene. Osećao sam se sigurno u svakoj fazi procesa.",
+    signiture: "Dragan L",
   },
 ];
 
@@ -124,26 +85,38 @@ export const cards1Data: Cards1Data[] = [
   {
     id: 1,
     icon: GiWeight,
-    title: "Iskustvo i profesionalizam",
-    text: "Višegodišnje iskustvo u opremanju enterijera.",
+    title: "Iskustvo i stručnost",
+    text: "Naš tim čine finansijski savetnici sa dugogodišnjim iskustvom u oblasti kreditiranja i finansija.",
   },
   {
     id: 2,
     icon: GiWeight,
-    title: "Iskustvo i profesionalizam",
-    text: "Višegodišnje iskustvo u opremanju enterijera.",
+    title: "Personalizovane preporuke",
+    text: "Svakom klijentu pristupamo individualno, analiziramo njegove potrebe i pronalazimo najpovoljnija rešenja.",
   },
   {
     id: 3,
     icon: GiWeight,
-    title: "Iskustvo i profesionalizam",
-    text: "Višegodišnje iskustvo u opremanju enterijera.",
+    title: "Ušteda vremena i novca",
+    text: "Umesto da sami istražujete banke i uslove, mi vam pružamo sve relevantne informacije i pregovaramo u vaše ime.",
   },
   {
     id: 4,
     icon: GiWeight,
-    title: "Srbija i inostranstvo",
-    text: "Višegodišnje iskustvo u opremanju enterijera.",
+    title: "Transparentnost i pouzdanost",
+    text: "Kod nas nema skrivenih troškova ni nejasnih uslova. Svaku odluku donosimo zajedno s vama, uz jasne informacije",
+  },
+  {
+    id: 5,
+    icon: GiWeight,
+    title: "Saradnja sa vodećim bankama",
+    text: "Radimo sa renomiranim finansijskim institucijama, što nam omogućava da vam obezbedimo najbolje uslove na tržištu.",
+  },
+  {
+    id: 6,
+    icon: GiWeight,
+    title: "Podrška od početka do kraja",
+    text: "Vodimo vas kroz ceo proces – od procene kreditne sposobnosti do realizacije kredita, rešavanja žalbi i tumačenja izveštaja Kreditnog biroa.",
   },
 ];
 
@@ -226,22 +199,52 @@ export interface Cards2Data {
 
 export const cards2Data: Cards2Data[] = [
   {
+    id: 7,
+    icon: GiWeight,
+    title: "Posredovanje pri odobravanju kredita.",
+    text: "",
+  },
+  {
+    id: 6,
+    icon: GiWeight,
+    title: "Tumačenje izveštaja Kreditnog biroa.",
+    text: "",
+  },
+  {
+    id: 5,
+    icon: GiWeight,
+    title: "Pisanje prigovora bankama i kreditnom birou",
+    text: "bankama i kreditnom birou",
+  },
+  {
     id: 1,
     icon: GiWeight,
-    title: "Elektroinstalacije",
-    text: "",
+    title: "Pomoc u pripremi kreditne dokumentacije",
+    text: "analiza ponuda, poređenje uslova, procena kreditne sposobnosti",
   },
   {
     id: 2,
     icon: GiWeight,
-    title: "Elektro ormani",
-    text: "",
+    title: "Refinansiranje",
+    text: "smanjenje mesečne rate, konsolidacija dugova",
   },
   {
     id: 3,
     icon: GiWeight,
-    title: "Industrijski elektro ormani",
-    text: "",
+    title: "Analiza prihoda, rashoca i kreditne sposobnosti",
+    text: "pomoć pri izboru najpovoljnijeg stambenog kredita",
+  },
+  {
+    id: 4,
+    icon: GiWeight,
+    title: "Pronalazenje kredita sa najboljim uslovima",
+    text: "saveti za brže i lakše dobijanje gotovinskog kredita",
+  },
+  {
+    id: 4,
+    icon: GiWeight,
+    title: "Pregovaranje sa bankama za bolje uslove",
+    text: "saveti za brže i lakše dobijanje gotovinskog kredita",
   },
 ];
 
@@ -251,13 +254,3 @@ export interface Cards2DataText {
 export const cards2DataText: Cards2DataText = {
   text: "Pružamo usluge izrade, montaže i održavanja elektro ormana za domaćinstva, poslovne prostore i industrijska postrojenja. Naš tim vodi računa o kvalitetu instalacija i bezbednosti sistema, uz poštovanje svih standarda i propisa.",
 };
-
-export const pictures: string[] = [
-  "/Kreditni savetnik logo.jpg",
-  "/Kreditni savetnik logo 1.jpg",
-  "/Kreditni savetnik logo 2.jpg",
-  "/Kreditni savetnik logo 3.jpg",
-  "/A frame reklama.jpg",
-  "/Roll up.jpg",
-  "/ulazna vrata.jpg",
-];

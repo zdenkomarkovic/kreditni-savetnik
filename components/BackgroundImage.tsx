@@ -3,10 +3,10 @@ import React from "react";
 
 const BackgroundImage = () => {
   return (
-    <div className="relative flex min-h-[30dvh]">
+    <div className="relative flex min-h-[20dvh] md:min-h-[40dvh]">
       {/* <div className="absolute top-0 left-0 w-full h-full bg-black/20 z-[1]" /> */}
       <Image
-        src={"/Kreditni savetnik logo 1.jpg"}
+        src={"/Kreditni savetnik logo 3.jpg"}
         alt="slep puric"
         fill
         className="w-full h-full  object-cover"

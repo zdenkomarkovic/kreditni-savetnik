@@ -1,44 +1,29 @@
 import About2 from "@/components/About2";
 import BackgroundImage from "@/components/BackgroundImage";
-import Cardlist from "@/components/Cardlist";
 import Cards1 from "@/components/Cards1";
 import Cards2 from "@/components/Cards2";
-import Cards2Kosina from "@/components/Cards2Kosina";
-import CardWithImage from "@/components/CardWithImage";
 import Hero2 from "@/components/Hero2";
-import ImageEditor from "@/components/ImageEditor";
-import PozoviteNasOdmah from "@/components/PozoviteNasOdmah";
 import PozoviteNasOdmahImage from "@/components/PozoviteNasOdmahImage";
 import Testemonials from "@/components/Testimonials";
-import {
-  cards1Data,
-  cards2Data,
-  cards2DataText,
-  pictures,
-} from "@/constants/index";
+import { cards1Data, cards2Data, cards2DataText } from "@/constants/index";
+import ServicesWithImage from "@/components/ServicesWithImage";
+import Hero2Image from "@/components/Hero2Image";
 
 export default function Home() {
   return (
     <div className="">
+      <Hero2Image
+        title={"Kreditni savetnik"}
+        img={"/usluge.jpg"}
+        text={"Sve vezano za kredite na jednom mestu!"}
+        text2={"Jer mi imamo odgovore svih banaka!"}
+      />
       <Hero2 />
       <About2 />
-      <PozoviteNasOdmah />
-      <CardWithImage />
-      <BackgroundImage />
+      <ServicesWithImage />
       <PozoviteNasOdmahImage />
-      <Cards1 title={"dodaj naslov"} data={cards1Data} />
-      <Cards2
-        title={"Elektroinstalacije i elektro ormani"}
-        data={cards2Data}
-        text={cards2DataText}
-      />
-      <Cards2Kosina
-        title={"Elektroinstalacije i elektro ormani"}
-        data={cards2Data}
-        text={cards2DataText}
-      />
-      <Cardlist />
-      <ImageEditor images={pictures} />
+      <BackgroundImage />
+      <Cards1 title={"Zašto izabrati Kreditni Savetnik?"} data={cards1Data} />
       <Testemonials />
     </div>
   );

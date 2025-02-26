@@ -4,9 +4,7 @@ import Hero1 from "../public/ulazna vrata.jpg";
 
 import Image from "next/image";
 import { ArrowRightIcon } from "lucide-react";
-
 import Link from "next/link";
-
 import { motion } from "framer-motion";
 
 const Hero = () => {

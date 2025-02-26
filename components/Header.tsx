@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Logo from "../public/Kreditni savetnik logo 2.jpg";
+import Logo from "../public/Kreditni savetnik logo 4.jpg";
 import Link from "next/link";
 import { MenuIcon, PhoneIcon } from "lucide-react";
 
@@ -87,7 +87,7 @@ export default function Header() {
         scrolled
           ? "bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-md"
           : "bg-transparent"
-      }  fixed top-0 left-0 right-0 z-[10] transition-colors`}
+      }  fixed top-0 left-0 right-0 z-[20] transition-colors`}
     >
       <nav className="flex items-center justify-between px-8 py-4 max-w-[80rem] w-full text-primary font-bold">
         <Link href="/" className="">

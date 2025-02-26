@@ -23,7 +23,9 @@ import Autoplay from "embla-carousel-autoplay";
 const Testemonials = () => {
   return (
     <div className="py-10 container px-4 mx-auto">
-      <h2 className="text-5xl py-20 text-center text-primary">Nasa ekipa</h2>
+      <h2 className="text-5xl py-20 text-center text-primary">
+        Iskustva klijenata
+      </h2>
 
       <Carousel
         className="w-full  overflow-hidden"
@@ -39,7 +41,7 @@ const Testemonials = () => {
         <CarouselContent className="flex gap-4">
           {testimonialData.map((service, i) => (
             <CarouselItem key={i} className="pl-4 md:basis-1/2 lg:basis-1/3">
-              <div className="p-5 h-full flex flex-col">
+              <div className="p-2 h-full flex flex-col">
                 <TestemonialCard service={service}></TestemonialCard>
               </div>
             </CarouselItem>
@@ -61,7 +63,7 @@ const TestemonialCard = ({ service }: { service: TestimonialData }) => {
       whileTap={{ scale: 0.95 }}
       className="h-full"
     >
-      <Card className={`bg-primary p-5 rounded-3xl text-white h-full`}>
+      <Card className={`bg-primary rounded-3xl text-white h-full`}>
         <CardHeader>
           <CardTitle className={`text-2xl capitalize text-center py-2`}>
             {service.title}
@@ -69,7 +71,9 @@ const TestemonialCard = ({ service }: { service: TestimonialData }) => {
         </CardHeader>
 
         <CardContent className="mx-auto ">{service.description}</CardContent>
-        <CardFooter></CardFooter>
+        <CardFooter className="flex justify-end items-end">
+          {service.signiture}
+        </CardFooter>
       </Card>
     </motion.div>
   );

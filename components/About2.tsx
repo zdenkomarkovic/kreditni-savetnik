@@ -42,9 +42,6 @@ const About2 = () => {
             finansijska odluka treba da bude mudro donesena – sa nama, vaša
             budućnost je u sigurnim rukama.
           </p>
-          <p>Pisanje prigovora bankama i kreditnom birou</p>
-          <p>Tumačenje izveštaja Kreditnog biroa</p>
-          <p>Posredovanje u procesu dobijanja kredita</p>
         </div>
         <motion.div
           initial={{ scale: 0.2, opacity: 0 }} // Naizmenično levo/desno
@@ -56,9 +53,9 @@ const About2 = () => {
           <Image
             src={"/savetnik.jpg"}
             width={500}
-            height={800}
+            height={500}
             alt="kreditni savetnik"
-            className="object-cover h-[300px] md:h-full"
+            className="object-cover"
           />
         </motion.div>
       </div>
