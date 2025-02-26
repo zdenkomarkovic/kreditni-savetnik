@@ -1,12 +1,5 @@
 import { IconType } from "react-icons";
-import { GiWeightLiftingUp } from "react-icons/gi";
 import { GiWeight } from "react-icons/gi";
-import { IoFitnessOutline } from "react-icons/io5";
-import { MdOutlineSportsGymnastics } from "react-icons/md";
-import { IoIosPeople } from "react-icons/io";
-import { IoIosPerson } from "react-icons/io";
-import { PiRocketLaunchBold } from "react-icons/pi";
-import { LuTimerReset } from "react-icons/lu";
 
 export const navList = [
   {
@@ -120,76 +113,6 @@ export const cards1Data: Cards1Data[] = [
   },
 ];
 
-export interface ServisCardsData {
-  id: number;
-  icon: IconType;
-  title: string;
-  text: string;
-}
-
-export const servisCardsData = [
-  {
-    id: 1,
-    icon: LuTimerReset,
-    title: "Šlep automobila",
-    text: "Vršimo šlep svih vrsta automobila, bez obzira na stanje vozila – havarisana, poluvozna ili ispravna.",
-  },
-  {
-    id: 2,
-    icon: GiWeight,
-    title: "Šlep motora",
-    text: "Šlepamo motore, skutere, četvorotočkaše, motorne sanke i druga vozila brzo i sigurno.",
-  },
-  {
-    id: 3,
-    icon: GiWeight,
-    title: "Šlep kombija i kamiona",
-    text: "Pružamo uslugu transporta kombija, kamiona i radnih mašina širom Srbije, uz sigurnost i brzinu.",
-  },
-  {
-    id: 4,
-    icon: GiWeight,
-    title: "Šlep vozila iz inostranstva",
-    text: "Vršimo prevoz automobila iz inostranstva po najpovoljnijim cenama u Srbiji.",
-  },
-  {
-    id: 5,
-    icon: GiWeight,
-    title: "Pomoc na putu 0-24h",
-    text: "Svakom može zatrebati u nekom trenutku, naročito u hitnim slučajevima. Kada je potrebna šlep služba u Čačku i na teritoriji Zlatibora.",
-  },
-  {
-    id: 6,
-    icon: GiWeight,
-    title: "Šlep lakog i teškog tereta",
-    text: "Za vas prevozimo i laki i teški teret, kako u Čačku, tako i u drugim gradovima Srbije.",
-  },
-  {
-    id: 7,
-    icon: GiWeight,
-    title: "Šlep havarisanog vozila",
-    text: "Ukoliko ste imali havariju na putu, tu smo da pokupimo vaše vozilo i bezbedno ga odšlepamo do servisa.",
-  },
-  {
-    id: 8,
-    icon: GiWeight,
-    title: "Šlep radnih mašina",
-    text: "Šlep radnih mašina do lokacije na kojoj mogu nastaviti s poslom, brzo i sigurno.",
-  },
-  {
-    id: 9,
-    icon: GiWeight,
-    title: "Izvlačenje sajlom vozila van puta",
-    text: "Izvlačenje vozila sa puta sajlom, pažljivo izvedeno kako bi se izbegla dodatna oštećenja vozila.",
-  },
-  {
-    id: 10,
-    icon: GiWeight,
-    title: "Prevoz poljoprivrednih mašina",
-    text: "Prevoz poljoprivrednih mašina, priključaka i opreme – idealno rešenje za one koje je lakše transportovati nego voziti, kao i za neispravne mašine.",
-  },
-];
-
 export interface Cards2Data {
   id: number;
   icon: IconType;
@@ -199,49 +122,49 @@ export interface Cards2Data {
 
 export const cards2Data: Cards2Data[] = [
   {
-    id: 7,
+    id: 1,
     icon: GiWeight,
     title: "Posredovanje pri odobravanju kredita.",
     text: "",
   },
   {
-    id: 6,
+    id: 2,
     icon: GiWeight,
     title: "Tumačenje izveštaja Kreditnog biroa.",
     text: "",
   },
   {
-    id: 5,
+    id: 3,
     icon: GiWeight,
     title: "Pisanje prigovora bankama i kreditnom birou",
     text: "bankama i kreditnom birou",
   },
   {
-    id: 1,
+    id: 4,
     icon: GiWeight,
     title: "Pomoc u pripremi kreditne dokumentacije",
     text: "analiza ponuda, poređenje uslova, procena kreditne sposobnosti",
   },
   {
-    id: 2,
+    id: 5,
     icon: GiWeight,
     title: "Refinansiranje",
     text: "smanjenje mesečne rate, konsolidacija dugova",
   },
   {
-    id: 3,
+    id: 6,
     icon: GiWeight,
     title: "Analiza prihoda, rashoca i kreditne sposobnosti",
     text: "pomoć pri izboru najpovoljnijeg stambenog kredita",
   },
   {
-    id: 4,
+    id: 7,
     icon: GiWeight,
     title: "Pronalazenje kredita sa najboljim uslovima",
     text: "saveti za brže i lakše dobijanje gotovinskog kredita",
   },
   {
-    id: 4,
+    id: 8,
     icon: GiWeight,
     title: "Pregovaranje sa bankama za bolje uslove",
     text: "saveti za brže i lakše dobijanje gotovinskog kredita",
