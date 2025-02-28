@@ -17,13 +17,6 @@ export default function Home() {
         text={"Sve vezano za kredite na jednom mestu!"}
         text2={"Jer mi imamo odgovore svih banaka!"}
       />
-      <Hero2Image
-        title={"Kreditni savetnik"}
-        img={"/marissa-grootes-n205UbNhy7E-unsplash.jpg"}
-        text={"Sve vezano za kredite na jednom mestu!"}
-        text2={"Jer mi imamo odgovore svih banaka!"}
-      />
-      <Hero2 />
       <About2 />
       <ServicesWithImage />
       <PozoviteNasOdmahImage />

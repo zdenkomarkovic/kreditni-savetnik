@@ -7,6 +7,14 @@ export const navList = [
     link: "/",
   },
   {
+    title: "Fizička lica",
+    link: "/fizickalica",
+  },
+  {
+    title: "Pravna lica",
+    link: "/pravnalica",
+  },
+  {
     title: "Kontakt",
     link: "/kontakt",
   },
