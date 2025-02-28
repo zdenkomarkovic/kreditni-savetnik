@@ -1,7 +1,6 @@
 import About2 from "@/components/About2";
 import BackgroundImage from "@/components/BackgroundImage";
 import Cards1 from "@/components/Cards1";
-import Hero2 from "@/components/Hero2";
 import PozoviteNasOdmahImage from "@/components/PozoviteNasOdmahImage";
 import Testemonials from "@/components/Testimonials";
 import { cards1Data } from "@/constants/index";

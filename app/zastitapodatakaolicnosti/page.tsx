@@ -2,7 +2,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div>
+    <div className="py-24">
       <div className="container px-2 md:px-4 mx-auto">
         <h1>PRAVILNIK O ZAŠTITI PODATAKA O LIČNOSTI</h1>
         <h3>Član 1 </h3>

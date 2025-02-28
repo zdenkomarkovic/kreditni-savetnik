@@ -26,7 +26,7 @@ const contactFormSchema = z.object({
     message: "Poruka mora imati najmanje 10 karaktera.",
   }),
 });
-const page = () => {
+const Page = () => {
   const form = useForm<z.infer<typeof contactFormSchema>>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
@@ -251,4 +251,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
