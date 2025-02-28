@@ -52,12 +52,12 @@ const Page = () => {
     }
     form.reset();
   };
-  const pStyle = "text-2xl";
-  const h2Style = "text-4xl text-primary";
+  const pStyle = "text-lg md:text-2xl";
+  const h2Style = "text-xl font-bold md:text-4xl text-primary";
   return (
     <div className="py-24">
       <div className="container px-2 md:px-4 mx-auto space-y-14">
-        <h1 className="text-5xl text-primary">
+        <h1 className="text-2xl md:text-5xl font-bold text-primary">
           Krediti za fizička lica – Pronađite najbolje rešenje za vas
         </h1>
         <p className={pStyle}>
@@ -70,8 +70,8 @@ const Page = () => {
           podršku u odabiru kredita koji najbolje odgovara vašim potrebama.
         </p>
 
-        <div className="flex items-center">
-          <div className="space-y-5 w-1/2">
+        <div className="flex items-center flex-col md:flex-row">
+          <div className="space-y-5 md;w-1/2">
             <div className="space-y-5">
               <h2 className={h2Style}>Naša ponuda kredita za fizička lica:</h2>
               <p className={pStyle}>

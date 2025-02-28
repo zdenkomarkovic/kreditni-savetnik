@@ -4,8 +4,8 @@ const page = () => {
   return (
     <div className="py-24">
       <div className="container px-2 md:px-4 mx-auto">
-        <h1>PRAVILNIK O ZAŠTITI PODATAKA O LIČNOSTI</h1>
-        <h3>Član 1 </h3>
+        <h1 className="text-4xl">PRAVILNIK O ZAŠTITI PODATAKA O LIČNOSTI</h1>
+        <h3 className="text-2xl">Član 1 </h3>
         <p>
           Na zahtev Korisnika, u svrhu korišćenja Servisa, Kreditni savetnik
           može vršiti obradu podataka Korisnika koja su dala pristanak za
@@ -26,7 +26,7 @@ const page = () => {
           osnov obrade podataka o ličnosti je kontaktiranje I dostavljanje
           informativne ponude banaka I drugih finansijskih organizacija.{" "}
         </p>
-        <h3>Član 2 </h3>
+        <h3 className="text-2xl">Član 2 </h3>
         <p>
           Pre prikupljanja podataka, M&D EAGLE FINANCE SOLUTIONS u svojstvu
           Rukovaoca podacima obaveštava lice na koje se podaci odnose o
@@ -59,7 +59,7 @@ const page = () => {
           mogu se obratiti Povereniku za informacije od javnog značaja i zaštitu
           podataka o ličnosti u cilju zaštite svojih prava.{" "}
         </p>
-        <h3>Član 3</h3>
+        <h3 className="text-2xl">Član 3</h3>
         <p>
           Podaci koji se prikupljaju u gore naznačene svrhe su: • ime, •
           prezime, • datum rođenja, • mesto stanovanja, • podaci neophodni za
@@ -69,7 +69,7 @@ const page = () => {
           poslodavca, naziv poslodavca) • IP adresa svakog pojedinog pristupa
           Servisu.{" "}
         </p>
-        <h3>Član 4</h3>
+        <h3 className="text-2xl">Član 4</h3>
         <p>
           M&D EAGLE FINANCE SOLUTIONS može, u skladu sa zakonom, prikupiti
           određene podatke o posetama dobijene tokom korišćenja Servisa. Ove
@@ -77,22 +77,22 @@ const page = () => {
           poboljšavala svoju uslugu informacionog društva i Servis, i dodatno ih
           usmerila i prilagodila posetiocima i Korisnicima.{" "}
         </p>
-        <h3>Član 5</h3>
+        <h3 className="text-2xl">Član 5</h3>
         <p>
           Kompanija obrađuje i čuva podatke samo u roku koji je neophodan za
           ostvarivanje svrhe obrade. Korisnik ima pravo da u svakom trenutku
           uloži prigovor na obradu podataka ili da zahteva izmenu ili brisanje
           podataka slanjem Emaila na adresu eagleconsalting@gmail.com
         </p>
-        <h3>Član 6</h3>
+        <h3 className="text-2xl">Član 6</h3>
         <p>
           Sva opšta akta Kompanije moraju biti u skladu sa ovim Pravilnikom o
           zaštiti podataka o ličnosti. Ukoliko neki opšti akt Kompanije nije u
           skladu sa ovim Pravilnikom u pogledu zaštite podataka o ličnosti,
           primenjuju se odredbe ovog Pravilnika.
         </p>
-        <p>Kreditni savetnik d.o.o</p>
-        <p>Beograd</p>
+        <p className="text-right">Kreditni savetnik d.o.o</p>
+        <p className="text-right">Beograd</p>
       </div>
     </div>
   );
