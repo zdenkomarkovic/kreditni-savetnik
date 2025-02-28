@@ -82,7 +82,7 @@ const page = () => {
           Kompanija obrađuje i čuva podatke samo u roku koji je neophodan za
           ostvarivanje svrhe obrade. Korisnik ima pravo da u svakom trenutku
           uloži prigovor na obradu podataka ili da zahteva izmenu ili brisanje
-          podataka slanjem Emaila na adresu eagleconsalting@gmail.com
+          podataka slanjem Emaila na adresu kreditnisavetnikdoo@gmail.com
         </p>
         <h3 className="text-2xl">Član 6</h3>
         <p>
