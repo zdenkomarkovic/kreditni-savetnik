@@ -139,7 +139,7 @@ const Page = () => {
                     </FormItem>
                   )}
                 />
-                <FormField
+                {/* <FormField
                   control={form.control}
                   name="name"
                   render={({ field }) => (
@@ -155,7 +155,7 @@ const Page = () => {
                       <FormMessage />
                     </FormItem>
                   )}
-                />
+                /> */}
 
                 <FormField
                   control={form.control}
@@ -175,7 +175,7 @@ const Page = () => {
                     </FormItem>
                   )}
                 />
-                <FormField
+                {/* <FormField
                   control={form.control}
                   name="date"
                   render={({ field }) => (
@@ -192,7 +192,7 @@ const Page = () => {
                       <FormMessage />
                     </FormItem>
                   )}
-                />
+                /> */}
 
                 <FormField
                   control={form.control}
