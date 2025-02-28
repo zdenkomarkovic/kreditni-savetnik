@@ -2,12 +2,12 @@ import BackgroundImage from "@/components/BackgroundImage";
 import React from "react";
 
 const page = () => {
-  const pStyle = "text-2xl";
-  const h2Style = "text-4xl text-primary";
+  const pStyle = "text-lg md:text-2xl";
+  const h2Style = "text-xl font-bold md:text-4xl text-primary";
   return (
     <div className="py-24">
       <div className="container px-2 md:px-4 mx-auto space-y-14">
-        <h1 className="text-5xl text-primary">
+        <h1 className="text-2xl md:text-5xl font-bold text-primary">
           Krediti za pravna lica – Pomoć u ostvarivanju poslovnih ciljeva
         </h1>
         <p className={pStyle}>
