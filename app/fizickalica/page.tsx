@@ -69,77 +69,75 @@ const Page = () => {
           bankama i finansijskim institucijama, pružamo vam nezavisne savete i
           podršku u odabiru kredita koji najbolje odgovara vašim potrebama.
         </p>
-        <div className="space-y-5">
-          <h2 className={h2Style}>Naša ponuda kredita za fizička lica:</h2>
-          <p className={pStyle}>
-            🔹 Stambeni krediti – Kupovina doma je velika odluka, a mi vam
-            pomažemo da pronađete najpovoljniji kredit sa optimalnim uslovima
-            otplate i konkurentnim kamatama.
-          </p>
-          <p className={pStyle}>
-            🔹 Keš krediti – Potrebna vam je dodatna finansijska podrška?
-            Omogućavamo vam da brzo i jednostavno pronađete keš kredit sa
-            fleksibilnim rokovima otplate.
-          </p>
-          <p className={pStyle}>
-            🔹 Refinansiranje kredita – Ako želite da smanjite mesečne troškove
-            ili spojite više kredita u jedan, pomažemo vam da pronađete najbolje
-            rešenje za refinansiranje.
-          </p>
-        </div>
-        <div className="space-y-5">
-          <h2 className={h2Style}>Zašto odabrati Kreditni Savetnik?</h2>
-          <p className={pStyle}>
-            ✔️ Nezavisno savetovanje – Pronalazimo najbolje opcije za vas, bez
-            favorizovanja banaka.
-          </p>
-          <p className={pStyle}>
-            ✔️ Brza i efikasna procedura – Štedimo vaše vreme i pomažemo vam da
-            što pre dođete do željenog kredita.
-          </p>
-          <p className={pStyle}>
-            ✔️ Povoljni uslovi – Pregovaramo u vaše ime kako bismo vam
-            obezbedili najniže kamatne stope i optimalne uslove otplate.
-          </p>
-          <p className={pStyle}>
-            ✔️ Individualni pristup – Svaka finansijska situacija je drugačija,
-            zato analiziramo vaše potrebe i dajemo personalizovane preporuke.
-          </p>
-        </div>
-        <div className="space-y-5">
-          <h2 className={h2Style}>
-            Kontaktirajte nas i donesite pravu finansijsku odluku!
-          </h2>
-          <p className={pStyle}>
-            Bilo da tek planirate uzimanje kredita ili želite bolje uslove od
-            postojećih, naš tim je tu da vam pomogne. Zakazite besplatne
-            konsultacije i saznajte kako do najboljeg finansijskog rešenja!
-          </p>
-        </div>
-        <div className="mx-2 md:mx-20 rounded-3xl ">
-          <Form {...form}>
-            <form
-              className="grid grid-cols-3 items-center p-4 lg:p-10 shadow-xl shadow-primary rounded-xl"
-              onSubmit={form.handleSubmit(onSubmit)}
-            >
-              <div className="col-span-3 flex flex-col gap-4 lg:col-span-3 lg:gap-8">
-                <FormField
-                  control={form.control}
-                  name="name"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel className="lg:text-xl">
-                        Ime i Prezime:
-                      </FormLabel>
 
-                      <FormControl>
-                        <Input placeholder="Unesite ime i prezime" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                {/* <FormField
+        <div className="flex items-center">
+          <div className="space-y-5 w-1/2">
+            <div className="space-y-5">
+              <h2 className={h2Style}>Naša ponuda kredita za fizička lica:</h2>
+              <p className={pStyle}>
+                🔹 Stambeni krediti – Kupovina doma je velika odluka, a mi vam
+                pomažemo da pronađete najpovoljniji kredit sa optimalnim
+                uslovima otplate i konkurentnim kamatama.
+              </p>
+              <p className={pStyle}>
+                🔹 Keš krediti – Potrebna vam je dodatna finansijska podrška?
+                Omogućavamo vam da brzo i jednostavno pronađete keš kredit sa
+                fleksibilnim rokovima otplate.
+              </p>
+              <p className={pStyle}>
+                🔹 Refinansiranje kredita – Ako želite da smanjite mesečne
+                troškove ili spojite više kredita u jedan, pomažemo vam da
+                pronađete najbolje rešenje za refinansiranje.
+              </p>
+            </div>
+            <div className="space-y-5">
+              <h2 className={h2Style}>Zašto odabrati Kreditni Savetnik?</h2>
+              <p className={pStyle}>
+                ✔️ Nezavisno savetovanje – Pronalazimo najbolje opcije za vas,
+                bez favorizovanja banaka.
+              </p>
+              <p className={pStyle}>
+                ✔️ Brza i efikasna procedura – Štedimo vaše vreme i pomažemo vam
+                da što pre dođete do željenog kredita.
+              </p>
+              <p className={pStyle}>
+                ✔️ Povoljni uslovi – Pregovaramo u vaše ime kako bismo vam
+                obezbedili najniže kamatne stope i optimalne uslove otplate.
+              </p>
+              <p className={pStyle}>
+                ✔️ Individualni pristup – Svaka finansijska situacija je
+                drugačija, zato analiziramo vaše potrebe i dajemo
+                personalizovane preporuke.
+              </p>
+            </div>
+          </div>
+          <div className="mx-2 md:mx-20 rounded-3xl ">
+            <Form {...form}>
+              <form
+                className="grid grid-cols-3 items-center p-4 lg:p-10 shadow-xl shadow-primary rounded-xl"
+                onSubmit={form.handleSubmit(onSubmit)}
+              >
+                <div className="col-span-3 flex flex-col gap-4 lg:col-span-3 lg:gap-8">
+                  <FormField
+                    control={form.control}
+                    name="name"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className="lg:text-xl">
+                          Ime i Prezime:
+                        </FormLabel>
+
+                        <FormControl>
+                          <Input
+                            placeholder="Unesite ime i prezime"
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  {/* <FormField
                   control={form.control}
                   name="name"
                   render={({ field }) => (
@@ -157,25 +155,25 @@ const Page = () => {
                   )}
                 /> */}
 
-                <FormField
-                  control={form.control}
-                  name="phone"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel className="lg:text-xl">
-                        Broj telefona:
-                      </FormLabel>
-                      <FormControl>
-                        <Input
-                          placeholder="Unesite vas broj telefona"
-                          {...field}
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                {/* <FormField
+                  <FormField
+                    control={form.control}
+                    name="phone"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className="lg:text-xl">
+                          Broj telefona:
+                        </FormLabel>
+                        <FormControl>
+                          <Input
+                            placeholder="Unesite vas broj telefona"
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  {/* <FormField
                   control={form.control}
                   name="date"
                   render={({ field }) => (
@@ -194,57 +192,68 @@ const Page = () => {
                   )}
                 /> */}
 
-                <FormField
-                  control={form.control}
-                  name="email"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel className="lg:text-xl">Email:</FormLabel>
-                      <FormControl>
-                        <Input placeholder="john@example.com" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
+                  <FormField
+                    control={form.control}
+                    name="email"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className="lg:text-xl">Email:</FormLabel>
+                        <FormControl>
+                          <Input placeholder="john@example.com" {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
 
-                <FormField
-                  control={form.control}
-                  name="message"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel className="lg:text-xl  ">
-                        Vasa poruka:
-                      </FormLabel>
-                      <FormControl>
-                        <Textarea
-                          {...field}
-                          placeholder="Vasa poruka za nas"
-                          className="text-gray-800"
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <p>
-                  Popunjavanjem forme slazete se sa{" "}
-                  <Link
-                    href="/zastitapodatakaolicnosti"
-                    className=" underline font-bold"
+                  <FormField
+                    control={form.control}
+                    name="message"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className="lg:text-xl  ">
+                          Vasa poruka:
+                        </FormLabel>
+                        <FormControl>
+                          <Textarea
+                            {...field}
+                            placeholder="Napisite nam za koji kredit ste zainteresovani"
+                            className="text-gray-800"
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <p>
+                    Popunjavanjem forme slazete se sa{" "}
+                    <Link
+                      href="/zastitapodatakaolicnosti"
+                      className=" underline font-bold"
+                    >
+                      Pravilnikom o zaštiti podataka o ličnosti.
+                    </Link>
+                  </p>
+                  <Button
+                    disabled={isLoading}
+                    className="bg-primary  hover:bg-gray-600 transition-colors ease-in-out duration-500"
                   >
-                    Pravilnikom o zaštiti podataka o ličnosti.
-                  </Link>
-                </p>
-                <Button
-                  disabled={isLoading}
-                  className="bg-primary  hover:bg-gray-600 transition-colors ease-in-out duration-500"
-                >
-                  {isLoading ? "Sending....." : "Send"}
-                </Button>
-              </div>
-            </form>
-          </Form>
+                    {isLoading ? "Sending....." : "Send"}
+                  </Button>
+                </div>
+              </form>
+            </Form>
+          </div>
+        </div>
+        <div className="space-y-5">
+          <h2 className={h2Style}>
+            Kontaktirajte nas i donesite pravu finansijsku odluku!
+          </h2>
+          <p className={pStyle}>
+            Bilo da tek planirate uzimanje kredita ili želite bolje uslove od
+            postojećih, naš tim je tu da vam pomogne. Zakazite besplatne
+            konsultacije i saznajte kako do najboljeg finansijskog rešenja!
+          </p>
         </div>
       </div>
     </div>
