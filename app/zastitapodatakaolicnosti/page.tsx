@@ -7,7 +7,7 @@ const page = () => {
         <h1 className="text-4xl">PRAVILNIK O ZAŠTITI PODATAKA O LIČNOSTI</h1>
         <h3 className="text-2xl">Član 1 </h3>
         <p>
-          Na zahtev Korisnika, u svrhu korišćenja Servisa, Kreditni savetnik
+          Na zahtev Korisnika, u svrhu korišćenja Servisa, KREDITNI SAVETNIK
           može vršiti obradu podataka Korisnika koja su dala pristanak za
           obradu, I iste neophodne podatke može dostaviti konkretnoj
           banci(odnosno pružaocu finansijskih usluga) za čije usluge se Korisnik
@@ -17,10 +17,10 @@ const page = () => {
           koji se prikupljaju I obradjuju u svrhu pružanja usluge jesu I ime I
           prezime, e-mail, adresa,kontakt telefon, datum I godina rodjenja I
           mesto boravka. Od trećih lica, konkretno od poslovnih banaka sa kojima
-          je Kreditni savetnik zajednički rukovaoc Podacima o ličnosti u skladu
+          je KREDITNI SAVETNIK zajednički rukovaoc Podacima o ličnosti u skladu
           sa odredbama Zakona o zaštiti podataka o ličnosti jesu I informacije o
           obavljenim sastancima I pozivima, podnetim zahtevima za kreditnim
-          proizvodima kao I potpisanim ugovorima. Kreditni savetnik može
+          proizvodima kao I potpisanim ugovorima. KREDITNI SAVETNIK može
           dostaviti podatke i državnim organima koji na osnovu zakona i/ili
           odluke suda ostvaruju pravo korišćenja tih podataka. Svrha i pravni
           osnov obrade podataka o ličnosti je kontaktiranje I dostavljanje
@@ -28,15 +28,14 @@ const page = () => {
         </p>
         <h3 className="text-2xl">Član 2 </h3>
         <p>
-          Pre prikupljanja podataka, M&D EAGLE FINANCE SOLUTIONS u svojstvu
-          Rukovaoca podacima obaveštava lice na koje se podaci odnose o
-          sledećem:{" "}
+          Pre prikupljanja podataka, KREDITNI SAVETNIK u svojstvu Rukovaoca
+          podacima obaveštava lice na koje se podaci odnose o sledećem:{" "}
         </p>
         <p>
           1. Da je Rukovalac podacima o ličnosti, odnosno lice odgovorno za
-          prikupljanje podataka M&D EAGLE FINANCE SOLUTIONS, ul. Veljka
-          Dugoševića 18a, 11000 Beograd, Republika Srbija, matični broj:
-          21760439, PIB: 112884401.{" "}
+          prikupljanje podataka KREDITNI SAVETNIK, ul. Pariske komune 39, 11070
+          Novi Beograd, Republika Srbija, matični broj: 22036785, PIB:
+          114539271.{" "}
         </p>
         <p>
           2. Da se prikupljeni podaci koriste na način koji omogućava
@@ -45,9 +44,8 @@ const page = () => {
           čuvanjem poslovne tajne i zakonom.
         </p>
         <p>
-          3. Da su lica koja koriste podatke ona lica koja su zaposlena u M&D
-          EAGLE FINANCE SOLUTIONS I koja imaju ovlašćenje za korišćenje
-          podataka.{" "}
+          3. Da su lica koja koriste podatke ona lica koja su zaposlena u
+          KREDITNI SAVETNIK I koja imaju ovlašćenje za korišćenje podataka.{" "}
         </p>
         <p>
           4. Da lice koje je dalo pristanak o prikupljanju i obradi podataka
@@ -71,9 +69,9 @@ const page = () => {
         </p>
         <h3 className="text-2xl">Član 4</h3>
         <p>
-          M&D EAGLE FINANCE SOLUTIONS može, u skladu sa zakonom, prikupiti
-          određene podatke o posetama dobijene tokom korišćenja Servisa. Ove
-          podatke Kompanija može da koristi kako bi imala informacije kojima bi
+          KREDITNI SAVETNIK može, u skladu sa zakonom, prikupiti određene
+          podatke o posetama dobijene tokom korišćenja Servisa. Ove podatke
+          Kompanija može da koristi kako bi imala informacije kojima bi
           poboljšavala svoju uslugu informacionog društva i Servis, i dodatno ih
           usmerila i prilagodila posetiocima i Korisnicima.{" "}
         </p>

@@ -23,13 +23,21 @@ export default function Footer() {
 
               <li>
                 <Link
-                  href="/"
+                  href="/fizickalica"
                   className="text-muted-foreground hover:text-primary"
                 >
-                  Usluge
+                  Fizička lica
                 </Link>
               </li>
 
+              <li>
+                <Link
+                  href="/pravnalica"
+                  className="text-muted-foreground hover:text-primary"
+                >
+                  Pravna lica
+                </Link>
+              </li>
               <li>
                 <Link
                   href="/kontakt"
@@ -44,39 +52,45 @@ export default function Footer() {
           <div className="space-y-3 pb-5 md:pb-0">
             <div>
               {" "}
-              <a href="tel:+38160 000 000">
+              <a href="tel:+381606412321">
                 <p className="text-muted-foreground  hover:text-primary">
-                  Telefon: +38160 000 000
+                  Telefon: +38160 64 12321
                 </p>
               </a>
             </div>
             <div>
-              <a href="mailto:">
+              <a href="mailto:kreditnisavetnikdoo@gmail.com">
                 <p className="text-muted-foreground text-wrap  hover:text-primary">
-                  Email: starter mail
+                  Email: kreditnisavetnikdoo@gmail.com
                 </p>
               </a>
             </div>
             <div className="flex space-x-4 justify-center md:justify-start">
-              <a href="#" className="text-muted-foreground hover:text-primary">
+              <a
+                href="https://www.facebook.com/profile.php?id=61565838137625"
+                className="text-muted-foreground hover:text-primary"
+              >
                 <Facebook />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary">
+              <a
+                href="https://www.instagram.com/kreditni_savetnik/"
+                className="text-muted-foreground hover:text-primary"
+              >
                 <Instagram />
               </a>
             </div>
           </div>
           <div className="md:col-span-1 col-span-2 text-center text-primary">
             <h3 className="text-lg font-semibold mb-2 md:mb-4">
-              starter naslov
+              Kreditni Savetnik
             </h3>
 
-            <p className=" font-bold ">starter poruka</p>
+            <p className=" font-bold ">savet od nas novac štedi</p>
           </div>
         </div>
 
         <div className="flex flex-col md:flex-row justify-center gap-2 md:gap-10 border-t-[1px] border-cool-green mt-10 pt-5">
-          <p>&copy; 2025 _________. Sva prava zadržana.</p>
+          <p>&copy; 2025 Kreditni Savetnik. Sva prava zadržana.</p>
           <a href="https://www.manikamwebsolutions.com/" target="_blank">
             izrada sajta:{" "}
             <span className="font-bold text-primary"> ManikamWebSolutions</span>
