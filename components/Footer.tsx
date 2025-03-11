@@ -85,7 +85,7 @@ export default function Footer() {
               Kreditni Savetnik
             </h3>
 
-            <p className=" font-bold ">savet od nas novac štedi</p>
+            <p className=" font-bold ">Savet od nas novac štedi</p>
           </div>
         </div>
 

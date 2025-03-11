@@ -20,7 +20,9 @@ import Link from "@/node_modules/next/link";
 
 const contactFormSchema = z.object({
   name: z.string().min(2, { message: "Molimo unesite vase ime i prezime" }),
-  phone: z.string().min(2, { message: "Molimo unesite vas broj telefona" }),
+  place: z.string().min(2, { message: "Molimo unesite vase mesto" }),
+  phone: z.string().min(6, { message: "Molimo unesite vas broj telefona" }),
+  date: z.string().min(6, { message: "Molimo unesite vas datum rodjenja" }),
   email: z.string().email({ message: "Molimo unesite vasu email adresu" }),
   message: z.string().min(10, {
     message: "Poruka mora imati najmanje 10 karaktera.",
@@ -31,14 +33,16 @@ const Page = () => {
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
       name: "",
+      place: "",
       phone: "",
+      date: "",
       email: "",
       message: "",
     },
   });
   const isLoading = form.formState.isSubmitting;
   const onSubmit = async (values: z.infer<typeof contactFormSchema>) => {
-    const mailText = `Ime: ${values.name}\n Telefon: ${values.phone}\n Email: ${values.email}\n Poruka: ${values.message}`;
+    const mailText = `Ime: ${values.name}\n Mesto: ${values.place}\n Telefon: ${values.phone}\n Datum: ${values.date}\n Email: ${values.email}\n Poruka: ${values.message}`;
     const response = await sendMail({
       email: values.email,
       subject: "New Contact Us Form",
@@ -71,7 +75,7 @@ const Page = () => {
         </p>
 
         <div className="flex items-center flex-col md:flex-row">
-          <div className="space-y-5 md;w-1/2">
+          <div className="space-y-5 md:w-1/2">
             <div className="space-y-5">
               <h2 className={h2Style}>Naša ponuda kredita za fizička lica:</h2>
               <p className={pStyle}>
@@ -111,7 +115,7 @@ const Page = () => {
               </p>
             </div>
           </div>
-          <div className="mx-2 md:mx-20 rounded-3xl ">
+          <div className="mx-2 md:ml-5 rounded-3xl ">
             <Form {...form}>
               <form
                 className="grid grid-cols-3 items-center p-4 lg:p-10 shadow-xl shadow-primary rounded-xl"
@@ -137,23 +141,23 @@ const Page = () => {
                       </FormItem>
                     )}
                   />
-                  {/* <FormField
-                  control={form.control}
-                  name="name"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel className="lg:text-xl">Mesto:</FormLabel>
+                  <FormField
+                    control={form.control}
+                    name="place"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className="lg:text-xl">Mesto:</FormLabel>
 
-                      <FormControl>
-                        <Input
-                          placeholder="Unesite mesto vaseg prebivalista"
-                          {...field}
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                /> */}
+                        <FormControl>
+                          <Input
+                            placeholder="Unesite mesto vaseg prebivalista"
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
 
                   <FormField
                     control={form.control}
@@ -173,24 +177,24 @@ const Page = () => {
                       </FormItem>
                     )}
                   />
-                  {/* <FormField
-                  control={form.control}
-                  name="date"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel className="lg:text-xl">
-                        Datum rodjenja:
-                      </FormLabel>
-                      <FormControl>
-                        <Input
-                          placeholder="Unesite vas datum rodjenja"
-                          {...field}
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                /> */}
+                  <FormField
+                    control={form.control}
+                    name="date"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className="lg:text-xl">
+                          Datum rodjenja:
+                        </FormLabel>
+                        <FormControl>
+                          <Input
+                            placeholder="Unesite vas datum rodjenja"
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
 
                   <FormField
                     control={form.control}

@@ -26,9 +26,8 @@ const Testemonials = () => {
       <h2 className="text-7xl py-14 text-center text-primary">
         Iskustva klijenata
       </h2>
-
       <Carousel
-        className="w-full  overflow-hidden"
+        className="w-full overflow-hidden"
         opts={{ loop: true }}
         plugins={[
           Autoplay({
