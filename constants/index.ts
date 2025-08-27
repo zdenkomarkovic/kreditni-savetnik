@@ -1,5 +1,11 @@
 import { IconType } from "react-icons";
 import { GiWeight } from "react-icons/gi";
+import { FaUserTie, FaUserCog, FaClock, FaShieldAlt, FaBuilding, FaHandshake } from "react-icons/fa";
+import { MdSavings, MdSupportAgent } from "react-icons/md";
+import { BiTargetLock } from "react-icons/bi";
+import { HiOutlineLightBulb } from "react-icons/hi";
+import { BsBank2 } from "react-icons/bs";
+import { AiOutlineTeam } from "react-icons/ai";
 
 export const navList = [
   {
@@ -81,37 +87,37 @@ export interface Cards1Data {
 export const cards1Data: Cards1Data[] = [
   {
     id: 1,
-    icon: GiWeight,
+    icon: FaUserTie,
     title: "Iskustvo i stručnost",
     text: "Naš tim čine finansijski savetnici sa dugogodišnjim iskustvom u oblasti kreditiranja i finansija.",
   },
   {
     id: 2,
-    icon: GiWeight,
+    icon: FaUserCog,
     title: "Personalizovane preporuke",
     text: "Svakom klijentu pristupamo individualno, analiziramo njegove potrebe i pronalazimo najpovoljnija rešenja.",
   },
   {
     id: 3,
-    icon: GiWeight,
+    icon: FaClock,
     title: "Ušteda vremena i novca",
     text: "Umesto da sami istražujete banke i uslove, mi vam pružamo sve relevantne informacije i pregovaramo u vaše ime.",
   },
   {
     id: 4,
-    icon: GiWeight,
+    icon: FaShieldAlt,
     title: "Transparentnost i pouzdanost",
     text: "Kod nas nema skrivenih troškova ni nejasnih uslova. Svaku odluku donosimo zajedno s vama, uz jasne informacije",
   },
   {
     id: 5,
-    icon: GiWeight,
+    icon: FaBuilding,
     title: "Saradnja sa vodećim bankama",
     text: "Radimo sa renomiranim finansijskim institucijama, što nam omogućava da vam obezbedimo najbolje uslove na tržištu.",
   },
   {
     id: 6,
-    icon: GiWeight,
+    icon: MdSavings,
     title: "Podrška od početka do kraja",
     text: "Vodimo vas kroz ceo proces – od procene kreditne sposobnosti do realizacije kredita, rešavanja žalbi i tumačenja izveštaja Kreditnog biroa.",
   },
@@ -127,49 +133,49 @@ export interface Cards2Data {
 export const cards2Data: Cards2Data[] = [
   {
     id: 1,
-    icon: GiWeight,
+    icon: FaHandshake,
     title: " - Posredovanje pri odobravanju kredita.",
     text: "",
   },
   {
     id: 2,
-    icon: GiWeight,
+    icon: MdSupportAgent,
     title: " - Tumačenje izveštaja Kreditnog biroa.",
     text: "",
   },
   {
     id: 3,
-    icon: GiWeight,
+    icon: BiTargetLock,
     title: " - Pisanje prigovora bankama i kreditnom birou",
     text: "bankama i kreditnom birou",
   },
   {
     id: 4,
-    icon: GiWeight,
+    icon: HiOutlineLightBulb,
     title: " - Pomoc u pripremi kreditne dokumentacije",
     text: "analiza ponuda, poređenje uslova, procena kreditne sposobnosti",
   },
   {
     id: 5,
-    icon: GiWeight,
+    icon: BsBank2,
     title: " - Refinansiranje",
     text: "smanjenje mesečne rate, konsolidacija dugova",
   },
   {
     id: 6,
-    icon: GiWeight,
+    icon: AiOutlineTeam,
     title: " - Analiza prihoda, rashoca i kreditne sposobnosti",
     text: "pomoć pri izboru najpovoljnijeg stambenog kredita",
   },
   {
     id: 7,
-    icon: GiWeight,
+    icon: MdSavings,
     title: " - Pronalazenje kredita sa najboljim uslovima",
     text: "saveti za brže i lakše dobijanje gotovinskog kredita",
   },
   {
     id: 8,
-    icon: GiWeight,
+    icon: FaHandshake,
     title: " - Pregovaranje sa bankama za bolje uslove",
     text: "saveti za brže i lakše dobijanje gotovinskog kredita",
   },

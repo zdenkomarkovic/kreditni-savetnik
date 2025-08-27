@@ -27,6 +27,9 @@ const contactFormSchema = z.object({
   message: z.string().min(10, {
     message: "Poruka mora imati najmanje 10 karaktera.",
   }),
+  acceptedTerms: z.boolean().refine((val) => val === true, {
+    message: "Morate prihvatiti pravilnik da biste poslali formu",
+  }),
 });
 const Page = () => {
   const form = useForm<z.infer<typeof contactFormSchema>>({
@@ -38,11 +41,12 @@ const Page = () => {
       date: "",
       email: "",
       message: "",
+      acceptedTerms: false,
     },
   });
   const isLoading = form.formState.isSubmitting;
   const onSubmit = async (values: z.infer<typeof contactFormSchema>) => {
-    const mailText = `Ime: ${values.name}\n Mesto: ${values.place}\n Telefon: ${values.phone}\n Datum: ${values.date}\n Email: ${values.email}\n Poruka: ${values.message}`;
+    const mailText = `Ime: ${values.name}\n Mesto: ${values.place}\n Telefon: ${values.phone}\n Datum: ${values.date}\n Email: ${values.email}\n Poruka: ${values.message}\n Prihvatio pravilnik: ${values.acceptedTerms ? 'Da' : 'Ne'}`;
     const response = await sendMail({
       email: values.email,
       subject: "New Contact Us Form",
@@ -74,7 +78,7 @@ const Page = () => {
           podršku u odabiru kredita koji najbolje odgovara vašim potrebama.
         </p>
 
-        <div className="flex items-center flex-col md:flex-row">
+        <div className="flex items-center flex-col gap-5 md:gap-0 md:flex-row">
           <div className="space-y-5 md:w-1/2">
             <div className="space-y-5">
               <h2 className={h2Style}>Naša ponuda kredita za fizička lica:</h2>
@@ -115,13 +119,13 @@ const Page = () => {
               </p>
             </div>
           </div>
-          <div className="mx-2 md:ml-5 rounded-3xl ">
+          <div className="mx-2 md:ml-5 rounded-3xl md:w-1/2">
             <Form {...form}>
               <form
-                className="grid grid-cols-3 items-center p-4 lg:p-10 shadow-xl shadow-primary rounded-xl"
+                className="space-y-6 p-4 lg:p-10 shadow-xl shadow-primary rounded-xl w-[85%] mx-auto"
                 onSubmit={form.handleSubmit(onSubmit)}
               >
-                <div className="col-span-3 flex flex-col gap-4 lg:col-span-3 lg:gap-8">
+                <div className="space-y-6">
                   <FormField
                     control={form.control}
                     name="name"
@@ -229,15 +233,35 @@ const Page = () => {
                       </FormItem>
                     )}
                   />
-                  <p>
-                    Popunjavanjem forme slazete se sa{" "}
-                    <Link
-                      href="/zastitapodatakaolicnosti"
-                      className=" underline font-bold"
-                    >
-                      Pravilnikom o zaštiti podataka o ličnosti.
-                    </Link>
-                  </p>
+                  <FormField
+                    control={form.control}
+                    name="acceptedTerms"
+                    render={({ field }) => (
+                      <FormItem className="flex flex-row items-start space-x-3 space-y-0">
+                        <FormControl>
+                          <input
+                            type="checkbox"
+                            checked={field.value}
+                            onChange={field.onChange}
+                            className="mt-1 h-4 w-4 text-primary border-gray-300 rounded focus:ring-primary focus:ring-2"
+                          />
+                        </FormControl>
+                        <div className="space-y-1 leading-none">
+                          <FormLabel className="text-sm font-normal">
+                            Prihvatam{" "}
+                            <Link
+                              href="/zastitapodatakaolicnosti"
+                              className="underline font-bold text-primary hover:text-gray-600"
+                              target="_blank"
+                            >
+                              Pravilnik o zaštiti podataka o ličnosti
+                            </Link>
+                          </FormLabel>
+                          <FormMessage />
+                        </div>
+                      </FormItem>
+                    )}
+                  />
                   <Button
                     disabled={isLoading}
                     className="bg-primary  hover:bg-gray-600 transition-colors ease-in-out duration-500"
